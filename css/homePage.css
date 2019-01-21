@@ -1,0 +1,61 @@
+/*div {
+  outline-style: dashed;
+  outline-width: 1px;
+  outline-color: red;
+}
+*/
+div.titleBar {
+    display: flex;
+    height: 100px;
+    /*width: 90%;*/
+    background-color: blue;
+}
+
+div.content {
+    margin-top: 28px;
+    width: 70%;
+    text-align: right;
+    outline-color: black;
+}
+
+div.SideBar {
+    width: 30%;
+    text-align: left;
+}
+
+div.studyContent {
+    background-color: #66ccff;
+    float: right;
+    width: 60px;
+}
+
+.picture {
+    text-align: right;
+}
+
+.titleBarLeft {
+    text-align: center;
+}
+
+a.titleBarLink {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+}
+
+div.bodys {
+    text-align: center;
+}
+
+#noob {
+    font-family: cursive;
+    color: maroon;
+}
+
+b {
+    font-family: serif;
+}
+
+b.emphasis {
+    font-family: cursive;
+}
