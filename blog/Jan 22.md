@@ -9,5 +9,5 @@
 <img src="https://ww2.mathworks.cn/etc/designs/mathworks/img/pic-header-mathworks-logo.svg" title="MathWorks" width="30%"/>
 以下链接均为代码操作simulink模型的方法
 
-+ [Stateflow编程接口](https://ww2.mathworks.cn/help/stateflow/programmatic-manipulation.html"Stateflow编程接口")
-+ [常见模块参数的设置](https://ww2.mathworks.cn/help/simulink/slref/block-specific-parameters.html#mw_c89fb247-a4eb-4a4f-bcc4-d27a68502cb4"模块的特定参数")
++ [Stateflow编程接口](https://ww2.mathworks.cn/help/stateflow/programmatic-manipulation.html)
++ [常见模块参数的设置](https://ww2.mathworks.cn/help/simulink/slref/block-specific-parameters.html#mw_c89fb247-a4eb-4a4f-bcc4-d27a68502cb4)
