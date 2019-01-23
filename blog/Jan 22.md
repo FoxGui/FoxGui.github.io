@@ -10,4 +10,6 @@
 以下链接均为代码操作simulink模型的方法
 
 + [Stateflow编程接口](https://ww2.mathworks.cn/help/stateflow/programmatic-manipulation.html)
+  + [Stateflow部分API提供的命令](https://ww2.mathworks.cn/help/stateflow/api/quick-start-for-the-stateflow-api.html)
+  + [通过Stateflow提供的API创建和访问Chart](https://ww2.mathworks.cn/help/stateflow/api/quick-start-for-the-stateflow-api.html)
 + [常见模块参数的设置](https://ww2.mathworks.cn/help/simulink/slref/block-specific-parameters.html#mw_c89fb247-a4eb-4a4f-bcc4-d27a68502cb4)
