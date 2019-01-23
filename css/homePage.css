@@ -1,3 +1,5 @@
+
+
 /*div {
   outline-style: dashed;
   outline-width: 1px;
@@ -45,10 +47,21 @@ a.titleBarLink {
 
 div.bodys {
     text-align: center;
+    background-color: #66ccff;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: normal;
+    border-bottom: thick dotted #888888;
+}
+
+q {
+    font-style: italic;
 }
 
 #noob {
-    font-family: cursive;
+    font-family: "Emblema One",cursive;
     color: maroon;
 }
 
@@ -58,4 +71,10 @@ b {
 
 b.emphasis {
     font-family: cursive;
+    font-size: large;
+}
+
+blockquote {
+    color: #cc6600;
+    text-decoration: underline;
 }
