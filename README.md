@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Welcome! 柴郡猫のblog
 
-You can use the [editor on GitHub](https://github.com/FoxGui/FoxGui.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## blog大事件
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 2019/1/23
++ 事件:
+    + 修改"[Jan 22.md](https://github.com/FoxGui/FoxGui.github.io/blob/master/blog/Jan%2022.md)"内容, 在原来基础上添加更多的通过MATLAB代码操作Simulink的模型的API，并添加部分自己对于这些函数的理解
+    + 调整结构, 主页"2019/1/21记事"移至blog文件夹下
+    + 主页调整日志说明文字位置，使日志似乎能让人看了
+    + 增加"2019/1/23记事"
+    + 利用css设置背景图片及背景图片布局属性
 
-### Markdown
+### 2019/1/22
++ 事件:
+    + 添加"[Jan 22.md](https://github.com/FoxGui/FoxGui.github.io/blob/master/blog/Jan%2022.md)"
+    + 在"[FoxGui.github.io](https://github.com/FoxGui/FoxGui.github.io/blob/master/index.html)"主页添加"@font-face"使用web字体, 失败
+    + 修改"[homePage.css](https://github.com/FoxGui/FoxGui.github.io/blob/master/css/homePage.css)"
+        + 为博客底端增加颜色"#66ccff"
+        + blockquote添加下划线，修改颜色为"#cc6600"
+        + 添加"study"下拉菜单
+        + 修改h2标题"2019/1/21记事"
+            ```
+            h2 {
+                font-size: x-large;
+                font-weight: normal;
+                border-bottom: thick dotted #888888;
+            }
+            ```
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 2019/1/21
++ 事件:
+    + 发现"[HelloGitHub](https://hellogithub.com/)"
+    + 添加"2019/1/21记事"
+    + 修改博客结构, 增加标题栏背景色, 修改部分字体样式, 添加引用
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FoxGui/FoxGui.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 更早之前的事未作备注

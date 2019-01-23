@@ -1,0 +1,33 @@
+.guarantee {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #a7cece;
+    /*padding: 25px;会在内容的四周增加25px的内边距*/
+    padding: 25px;
+    /*margin: 30px;会在内容的四周增加30px的外边距*/
+    margin: 30px;
+    /*margin-left;margin-right;margin-bottom;等等同理不过会变成上下左右而已*/
+}
+
+.test_guarantee {
+    line-height: 1.9em;
+    font-style: italic;
+    font-family: cursive, serif;
+    color: #444444;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #a7cece;
+    padding: 25px;
+    padding-left: 80px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    /*margin: top left bottom 30px;这是一串并没有任何鸟用的猜想代码*/
+    /*增加背景图片，循环布置*/
+    background-image: url(../images/doge1.jpg);
+    /*设置背景图片重复属性*/
+    background-repeat: space;
+    /*将测试图形设置到左上角*/
+    background-position: top right;
+}

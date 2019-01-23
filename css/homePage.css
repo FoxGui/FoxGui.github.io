@@ -31,12 +31,24 @@ div.studyContent {
     width: 60px;
 }
 
+div.chats {
+    display: flex;
+    flex-direction:column;
+    width: 600px;
+    margin-left: 450px;
+}
+
 .picture {
     text-align: right;
 }
 
 .titleBarLeft {
     text-align: center;
+}
+
+a.a_href {
+    text-decoration: none;
+    color: grey;
 }
 
 a.titleBarLink {
@@ -53,7 +65,8 @@ div.bodys {
 h2 {
     font-size: x-large;
     font-weight: normal;
-    border-bottom: thick dotted #888888;
+    border-bottom: thick dashed #888888;
+    color: black;
 }
 
 q {
