@@ -57,6 +57,11 @@ a.titleBarLink {
     color: yellow;
 }
 
+a.studyContentInner {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
 div.bodys {
     text-align: center;
     background-color: #66ccff;
