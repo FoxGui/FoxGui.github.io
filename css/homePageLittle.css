@@ -15,13 +15,13 @@ div.titleBar {
 
 div.content {
     margin-top: 28px;
-    width: 70%;
+    width: 50%;
     text-align: right;
     outline-color: black;
 }
 
 div.SideBar {
-    width: 30%;
+    width: 60%;
     text-align: left;
 }
 
@@ -35,7 +35,8 @@ div.chats {
     display: flex;
     flex-direction:column;
     width: 600px;
-    margin-left: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .picture {
@@ -63,7 +64,7 @@ div.bodys {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 150%;
     color: black;
 }
 
