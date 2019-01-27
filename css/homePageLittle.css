@@ -47,6 +47,11 @@ div.chats {
     text-align: center;
 }
 
+a.studyContentInner {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
 a.a_href {
     text-decoration: none;
     color: grey;

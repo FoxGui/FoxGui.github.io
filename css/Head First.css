@@ -8,7 +8,7 @@
     /*margin: 30px;会在内容的四周增加30px的外边距*/
     margin: 30px;
     /*margin-left;margin-right;margin-bottom;等等同理不过会变成上下左右而已*/
-}
+    }
 
 .test_guarantee {
     line-height: 1.9em;
@@ -30,4 +30,9 @@
     background-repeat: space;
     /*将测试图形设置到左上角*/
     background-position: top right;
+}
+
+div.chats p {
+    /*增加1/23记事的行高*/
+    line-height: 2em;
 }
