@@ -46,10 +46,26 @@ div.chats {
     text-align: center;
 }
 
+a:link {
+    /*应用于处于未访问状态的链接*/
+    color: green;
+}
+
+a:visited {
+    /*应用于已访问的链接*/
+    color: red;
+}
+
+a:hover {
+    /*悬停在连接上时可以使用这个选择器制造更多效果*/
+    background: yellow;
+    color: blue;
+    border-radius: 5px;
+}
+
 a {
     text-decoration: none;
     font-size: 20px;
-    color: blue;
 }
 
 div.chats .a_href {
