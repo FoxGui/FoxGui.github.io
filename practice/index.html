@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practice</title>
+        <link rel="stylesheet" href="../css/homePage.css" media="screen and (min-width: 1080px)">
+        <link rel="stylesheet" href="../css/homePageLittle.css" media="screen and (max-width: 1080px)">
+        <!--添加下拉菜单study样式-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".study").click(function() {
+                    $(".studyContent").slideToggle("Fast");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="titleBar">
+            <div class="SideBar titleBarLeft">
+                <h1>welcome!</h1>
+            </div>
+            <div class="content titleBarRight">
+                <a href="../">首页</a>
+                <a href="../LeetCode/">LeetCode</a>
+                <a href="../PAT/">PAT</a>
+                <a href="">practice</a>
+            </div>
+            <div class="picture">
+                <img src="../images/doge.gif" alt="doge"><br>
+                <button type="button" name="button" class="study">Study</button><br>
+                <div class="studyContent">
+                    <a target="_blank" href="https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80">git教程</a><br>
+                    <a target="_blank" href="https://github.com/521xueweihan/git-tips">git-tips</a>
+                </div>
+            </div>
+        </div>
+        <div class="chats">
+            <div class="chat">
+                <h1>学习记录</h1>
+                <a href="html/html-intro.html" class="a_href">
+                    <h2>HTML</h2>
+                    <p>HTML，即超文本标记语言（Hyper Text Markup Language）...</p>
+                </a>
+                <a href="css/css-intro.html" class="a_href">
+                    <h2>CSS</h2>
+                    <p>层叠样式表（Cascading StyleSheet）...</p>
+                </a>
+                <a href="css/css3-intro.html" class="a_href">
+                    <h2>CSS3</h2>
+                    <p>CSS3是CSS技术的升级版本...</p>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+                <p><a target="_blank" href="https://www.github.com/FoxGui/FoxGui.github.io" title="这是个传送门"><em>github源码</em></a></p>
+                <p id="noob">这里是一只刚学前端的菜鸟搭建的博客，如有<b>大佬</b>看见还望多加指点</p>
+        </div>
+    </body>
+</html>
