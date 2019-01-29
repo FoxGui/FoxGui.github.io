@@ -4,18 +4,19 @@
 
 ### 2019/1/29
 + 事件: 
-    + 各页面增加指向practice的链接
+    + 各页面增加指向[practice](https://github.com/FoxGui/FoxGui.github.io/blob/master/practice/index.html)的链接
     + 调整div.chat大小使之自适应窗口页面大小
     + 对css分块注释，更容易找到相关css设置，减小修改代码时的工作量
     + 删除部分无用的类，改为子孙选择器
     + css中增加表格设置，全局设置表格属性
+    + [LeetCode](https://github.com/FoxGui/FoxGui.github.io/blob/master/LeetCode/index.html)记录帖下增加1-33题链接
 
 ### 2019/1/28
 + 事件:
-    + 添加practice文件，添加HTML功能描述
+    + 添加[practice](https://github.com/FoxGui/FoxGui.github.io/blob/master/practice/index.html)文件，添加HTML功能描述
     + 为链接添加伪类a:link; a:visited; a:hover;
     + 鼠标悬停在链接上时背景框设置为圆角，主页内容链接进行提示
-    + html-intro.html应用table，并设置部分table属性
+    + [html-intro.html](https://github.com/FoxGui/FoxGui.github.io/blob/master/practice/html/html-intro.html)应用table，并设置部分table属性
 + bug:
     + css层叠顺序有问题，显示效果比较凌乱
 
@@ -25,13 +26,13 @@
         + 为主页添加页面适应效果应对浏览器页面大小不同的情况
         + 在css中增加子孙选择器
         + 修改1/23记事行高为2em
-    + 尝试使用git合并功能，合并今天的修改和1.25添加的git-tips下拉菜单
+    + 尝试使用git合并功能，合并今天的修改和1.25添加的[git-tips](https://github.com/521xueweihan/git-tips)下拉菜单
 + bug:
     + 添加子孙选择器造成了一定量的代码冗余
 
 ### 2019/1/25
 + 事件:
-    + study下拉菜单添加git-tips选项
+    + study下拉菜单添加[git-tips](https://github.com/521xueweihan/git-tips)选项
 
 ### 2019/1/23
 + 事件:
