@@ -3,8 +3,47 @@
     <head>
         <meta charset="utf-8">
         <title>Jan 13</title>
+        <link rel="stylesheet" href="../css/homePage.css" media="screen and (min-width: 1080px)">
+        <link rel="stylesheet" href="../css/homePageLittle.css" media="screen and (max-width: 1080px)">
+        <link rel="stylesheet" href="../css/Head First.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".study").click(function() {
+                    $(".studyContent").slideToggle("Fast");
+                });
+            });
+        </script>
     </head>
     <body>
-        <p>今天的收获: 申请了"chaijunmao.net"域名，"quartz"相关域名n年前就被注册了，心塞！</p>
+        <div class="titleBar">
+            <div class="SideBar titleBarLeft">
+                <h1>Welcome!<b><q>柴郡猫のblog</q></b></h1>
+            </div>
+            <div class="content titleBarRight">
+                <a href="../">首页</a>
+                <a href="../LeetCode/">LeetCode</a>
+                <a href="../PAT/">PAT</a>
+                <a href="../practice/">practice</a>
+            </div>
+            <div class="picture">
+                <img src="../images/doge2.gif" alt="doge2"><br>
+                <button type="button" name="button" class="study">Study</button><br>
+                <div class="studyContent">
+                    <a target="_blank" href="https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80">git教程</a>
+                    <a target="_blank" href="https://github.com/521xueweihan/git-tips">git-tips</a>
+                </div>
+            </div>
+        </div>
+        <div class="chats">
+            <p>
+                今天的收获: 申请了"chaijunmao.net"域名，
+                "quartz"相关域名n年前就被注册了，心塞！
+            </p>
+        </div>
+        <div class="footer">
+            <p><a target="_blank" href="https://www.github.com/FoxGui/FoxGui.github.io" title="这是个传送门"><em>github源码</em></a></p>
+            <p id="noob">这里是一只刚学前端的菜鸟搭建的博客，如有<b>大佬</b>看见还望多加指点</p>
+        </div>
     </body>
 </html>
