@@ -3,39 +3,324 @@
     <head>
         <meta charset="utf-8">
         <title>柴郡猫のLeetCode</title>
-        <link rel="stylesheet" href="../css/homePage.css">
+        <link rel="stylesheet" href="../css/homePage.css" media="screen and (min-width: 1080px)">
+        <link rel="stylesheet" href="../css/homePageLittle.css" media="screen and (max-width: 1080px)">
+        <link rel="stylesheet" href="../css/Head First.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".study").click(function() {
+                    $(".studyContent").slideToggle("Fast");
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="titleBar">
             <div class="SideBar titleBarLeft">
-                <h1>柴郡猫のLeetCode</h1>
+                <h1>Welcome!<b><q>柴郡猫のblog</q></b></h1>
             </div>
             <div class="content titleBarRight">
-                <a href="../" class="titleBarLink">首页</a>
-                <a href="" class="titleBarLink">LeetCode刷题记录</a>
-                <a href="../PAT/" class="titleBarLink">PAT刷题记录</a>
+                <a href="../">首页</a>
+                <a href="">LeetCode</a>
+                <a href="../PAT/">PAT</a>
+                <a href="../practice/">practice</a>
             </div>
             <div class="picture">
-                <img src="../images/doge1.jpg">
+                <img src="../images/doge2.gif" alt="doge2"><br>
+                <button type="button" name="button" class="study">Study</button><br>
+                <div class="studyContent">
+                    <a target="_blank" href="https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80">git教程</a>
+                    <a target="_blank" href="https://github.com/521xueweihan/git-tips">git-tips</a>
+                </div>
             </div>
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <th align="center">ID</th>
-                    <th align="center">Title</th>
-                    <th align="center">ProblemSet</th>
-                    <th align="center">Difficulty</th>
-                    <th align="center">Python3</th>
-                    <th align="center">C/C++</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td align="center">0001</td>
-                    <td align="center"><a href="#">Two Sum</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="chats" style="width: 900px; margin-left: 25%;">
+            <h2>LEETCODE</h2>
+            <div class="chat">
+                <table class="dataInTable">
+                        <thead>
+                            <tr>
+                                <th width="80px">ID</th>
+                                <th>Title</th>
+                                <th width="110px">ProblemSet</th>
+                                <th width="90px">Difficulty</th>
+                                <th width="90px">Python3</th>
+                                <th width="90px">C/C++</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0001</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/two-sum">Two Sum</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td><a href="#">Python3</a></td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0002</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/add-two-numbers">Add Two Numbers</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0003</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0004</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/median-of-two-sorted-arrays">Median of Two Sorted Arrays </a></td>
+                                <td>Algorithms</td>
+                                <td><span class="hard">Hard</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0005</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/longest-palindromic-substring">Longest Palindromic Substring</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0006</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/zigzag-conversion">ZigZag Conversion</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0007</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/reverse-integer">Reverse Integer </a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0008</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/string-to-integer-atoi">String to Integer (atoi)</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0009</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/palindrome-number">Palindrome Number</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0010</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/regular-expression-matching">Regular Expression Matching</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="hard">Hard</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0011</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/container-with-most-water">Container With Most Water</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0012</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/integer-to-roman">Integer to Roman</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0013</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/roman-to-integer">Roman to Integer</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0014</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/longest-common-prefix">Longest Common Prefix</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0015</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/3sum">3Sum</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0016</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/3sum-closest">3Sum Closest</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0017</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0018</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/4sum">4Sum</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0019</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/remove-nth-node-from-end-of-list">Remove Nth Node From End of List</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0020</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/valid-parentheses">Valid Parentheses</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0021</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/merge-two-sorted-lists">Merge Two Sorted Lists</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0022</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/generate-parentheses">Generate Parentheses</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0023</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/merge-k-sorted-lists">Merge k Sorted Lists</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="hard">Hard</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0024</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/swap-nodes-in-pairs">Swap Nodes in Pairs</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0025</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/reverse-nodes-in-k-group">Reverse Nodes in k-Group</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="hard">Hard</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0026</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/remove-duplicates-from-sorted-array">Remove Duplicates from Sorted Array</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0027</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/remove-element">Remove Element</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0028</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/implement-strstr">Implement strStr()</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="easy">Easy</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0029</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/divide-two-integers">Divide Two Integers</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0030</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/substring-with-concatenation-of-all-words">Substring with Concatenation of All Words</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="hard">Hard</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0031</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/next-permutation">Next Permutation</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0032</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/longest-valid-parentheses">Longest Valid Parentheses</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="hard">Hard</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>0033</td>
+                                <td><a target="_blank" href="https://leetcode.com/problems/search-in-rotated-sorted-array">Search in Rotated Sorted Array</a></td>
+                                <td>Algorithms</td>
+                                <td><span class="medium">Medium</span></td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <div class="footer">
+                <p><a target="_blank" href="https://www.github.com/FoxGui/FoxGui.github.io" title="这是个传送门"><em>github源码</em></a></p>
+                <p id="noob">这里是一只刚学前端的菜鸟搭建的博客，如有<b>大佬</b>看见还望多加指点</p>
+            </div>
     </body>
 </html>
