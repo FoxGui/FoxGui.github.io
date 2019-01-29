@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Emblema One";
+    src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
+    url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf");
+}
 
-
+/*--------------------盒模型div--------------------*/
 /*div {
   outline-style: dashed;
   outline-width: 1px;
@@ -34,8 +39,9 @@ div.studyContent {
 div.chats {
     display: flex;
     flex-direction:column;
-    width: 600px;
-    margin-left: 30%;
+    width: 60%px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .picture {
@@ -46,6 +52,12 @@ div.chats {
     text-align: center;
 }
 
+
+div.footer {
+    text-align: center;
+    background-color: #66ccff;
+}
+/*--------------------链接--------------------*/
 a:link {
     /*应用于处于未访问状态的链接*/
     color: green;
@@ -80,11 +92,10 @@ div.studyContent a {
     font-size: 1em;
 }
 
-div.bodys {
-    text-align: center;
-    background-color: #66ccff;
+div.footer a {
+    font-size: 21px;
 }
-
+/*--------------------HTML标题--------------------*/
 h1 {
     font-size: 200%;
     color: black;
@@ -96,14 +107,15 @@ h2 {
     border-bottom: thick dashed #888888;
     color: black;
 }
-
+/*--------------------引用&强调--------------------*/
 q {
     font-style: italic;
 }
 
 #noob {
-    font-family: "Emblema One",cursive;
+    font-family: "Emblema One",cursive, serif;
     color: maroon;
+    font-size: 21px;
 }
 
 b {
@@ -111,11 +123,64 @@ b {
 }
 
 b.emphasis {
-    font-family: cursive;
+    font-family: cursive, serif;
     font-size: large;
 }
 
 blockquote {
     color: #cc6600;
     text-decoration: underline;
+}
+
+span.new {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    float: right;
+    color: #fff;
+    background-color: #90b575;
+    font-weight: 700;
+    border: 1px solid #fff;
+    outline: 1px solid #90b575;
+    line-height: 16px;
+    padding-right: 5px;
+}
+/*--------------------表格--------------------*/
+table.dataInTable {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table.dataInTable th {
+    vertical-align: center;
+    text-align: left;
+    line-height:2em;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+table.dataInTable td {
+    vertical-align: center;
+    line-height: 2em;
+    border: 1px solid grey;
+}
+
+table.dataInTable tr:nth-child(odd) {
+    background-color: #bbe4ff;
+}
+
+table.dataInTable tr:nth-child(even) {
+    background-color: white;
+}
+
+table.dataInTable span {
+    font-family: cursive, serif;
+    font-weight: bold;
+}
+
+table.dataInTable span.notSupported {
+    font-family: monospace;
+    font-size: large;
+    color: red;
 }
