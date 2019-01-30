@@ -5,6 +5,7 @@
         <title>柴郡猫のblog</title>
         <link rel="stylesheet" href="css/homePage.css" media="screen and (min-width: 1080px)">
         <link rel="stylesheet" href="css/homePageLittle.css" media="screen and (max-width: 1080px)">
+        <link href='http://fonts.googleapis.com/css?family=Fruktur' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
@@ -15,9 +16,12 @@
         </script>
     </head>
     <body>
+        <div style="position: fixed; right: 0%; bottom: -5px;">
+            <a href="#top"><img draggable="false" class="emoji" alt="⤴️"  width=50% title="Back To Top" src="https://twemoji.maxcdn.com/2/72x72/2934.png"></a>
+        </div>
         <div class="titleBar">
             <div class="SideBar titleBarLeft">
-                <h1>Welcome!<b><q>柴郡猫のblog</q></b></h1>
+                <h1>Welcome!<q>柴郡猫のblog</q></h1>
             </div>
             <div class="content titleBarRight">
                 <a href="">首页</a>
@@ -64,9 +68,9 @@
                 </a>
             </div>
         </div>
-        <div class="footer">
+        <footer class="footer">
             <p><a target="_blank" href="https://www.github.com/FoxGui/FoxGui.github.io" title="这是个传送门"><em>github源码</em></a></p>
             <p id="noob">这里是一只刚学前端的菜鸟搭建的博客，如有<b>大佬</b>看见还望多加指点</p>
-        </div>
+        </footer>
     </body>
 </html>

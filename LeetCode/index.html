@@ -5,6 +5,7 @@
         <title>柴郡猫のLeetCode</title>
         <link rel="stylesheet" href="../css/homePage.css" media="screen and (min-width: 1080px)">
         <link rel="stylesheet" href="../css/homePageLittle.css" media="screen and (max-width: 1080px)">
+        <link href='http://fonts.googleapis.com/css?family=Fruktur' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../css/Head First.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript">
@@ -16,7 +17,12 @@
         </script>
     </head>
     <body>
-        <div class="titleBar">
+        <div style="position: fixed; right: 0%; bottom: -5px;">
+                <p><a href="#No30">No30</a></p>
+                <p><a href="#No60">No60</a></p>
+                <a href="#top"><img draggable="false" class="emoji" alt="⤴️" src="https://twemoji.maxcdn.com/2/72x72/2934.png" width=50%;></a>
+        </div>
+        <div class="titleBar" id="top">
             <div class="SideBar titleBarLeft">
                 <h1>Welcome!<b><q>柴郡猫のblog</q></b></h1>
             </div>
@@ -283,7 +289,7 @@
                                 <td>None</td>
                             </tr>
                             <tr>
-                                <td>0030</td>
+                                <td id="No30">0030</td>
                                 <td><a target="_blank" href="https://leetcode.com/problems/substring-with-concatenation-of-all-words">Substring with Concatenation of All Words</a></td>
                                 <td>Algorithms</td>
                                 <td><span class="hard">Hard</span></td>
