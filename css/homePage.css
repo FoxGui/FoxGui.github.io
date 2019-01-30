@@ -3,7 +3,11 @@
     src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
     url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf");
 }
-
+/* html, body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+} */
 /*--------------------盒模型div--------------------*/
 /*div {
   outline-style: dashed;
@@ -31,7 +35,7 @@ div.SideBar {
 }
 
 div.studyContent {
-    background-color: #66ccff;
+    background-color: none;
     float: right;
     width: 60px;
 }
@@ -53,7 +57,7 @@ div.chats {
 }
 
 
-div.footer {
+.footer {
     text-align: center;
     background-color: #66ccff;
 }
@@ -135,7 +139,7 @@ div.studyContent a {
     font-size: 1em;
 }
 
-div.footer a {
+.footer a {
     font-size: 21px;
 }
 
@@ -146,7 +150,10 @@ table.dataInTable a {
 /*--------------------HTML标题--------------------*/
 h1 {
     font-size: 200%;
-    color: black;
+    color: white;
+    font-family: 'Fruktur', cursive;
+    text-shadow: 2px 2px 2px black,
+    0 0 20px #66ccff;
 }
 
 h2 {

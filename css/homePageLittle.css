@@ -52,7 +52,7 @@ div.chats {
     text-align: center;
 }
 
-div.footer {
+.footer {
     text-align: center;
     background-color: #66ccff;
 }
@@ -135,7 +135,7 @@ div.studyContent a {
     font-size: 1em;
 }
 
-div.footer a {
+.footer a {
     font-size: 21px;
 }
 
