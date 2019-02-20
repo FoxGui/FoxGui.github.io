@@ -2,6 +2,10 @@
 
 ## blog大事件
 
+### 2019/2/20
++ 事件: 
+    + 测试同时添加ssh到GitHub与gitlab是否成功
+
 ### 2019/1/29
 + 事件: 
     + 各页面增加指向[practice](https://github.com/FoxGui/FoxGui.github.io/blob/master/practice/index.html)的链接
