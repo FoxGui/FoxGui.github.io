@@ -35,7 +35,7 @@ div.SideBar {
 }
 
 div.studyContent {
-    background-color: none;
+    /*background-color: none;*/
     float: right;
     width: 60px;
 }
@@ -43,9 +43,9 @@ div.studyContent {
 div.chats {
     display: flex;
     flex-direction:column;
-    width: 60%px;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .picture {
