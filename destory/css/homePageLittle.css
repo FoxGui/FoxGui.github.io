@@ -39,7 +39,7 @@ div.studyContent {
 div.chats {
     display: flex;
     flex-direction:column;
-    width: 60%px;
+    width: 60px;
     margin-left: 20%;
     margin-right: 20%;
 }

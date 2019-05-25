@@ -42,7 +42,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'FoxGui的blog'
+      // title: 'FoxGui的blog',
+      filename: 'index.html',
+      template: './src/index.html'
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -78,7 +80,7 @@ module.exports = {
         }},
       {test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['url-loader']},
       {
-        test: /\.(j|t)sx?$/,
+        test: /\.([jt])sx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -109,7 +111,8 @@ module.exports = {
     alias: {
       '@assets': resolve('src/assets'),
       '@pages': resolve('src/pages'),
-      '@components': resolve('src/components')
+      '@components': resolve('src/components'),
+      '@utils': resolve('src/utils')
     }
   }
 };

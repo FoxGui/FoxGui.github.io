@@ -1,17 +1,22 @@
 import * as React from 'react';
+import Helmet from 'react-helmet';
+import {Router} from 'react-router-dom';
 
-import Body from './main'
-import Footer from '@components/Layout/Footer'
+import Body from '@pages/main'
+import hashHistory from "@utils/router";
 
 class App extends React.Component {
   render() {
     return (
       <>
-        <header>
-          这是一个起点
-        </header>
-        <Body/>
-        <Footer/>
+        <Helmet>
+          <link rel="icon" href={'../assets/icons/favicon'} type="image/x-icon"/>
+          <title>{"FoxGui的blog"}</title>
+        </Helmet>
+
+        <Router history={hashHistory}>
+          <Body/>
+        </Router>
       </>
     )
   }

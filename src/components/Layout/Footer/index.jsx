@@ -5,9 +5,9 @@ import './index.less'
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="footer-container">
-        <div className="wrapper">
-          <p>记录自己前端学习的一点一滴</p>
+      <footer>
+        <div className="footer-container">
+          <p className="wrapper">记录自己前端学习的一点一滴</p>
         </div>
       </footer>
     )
