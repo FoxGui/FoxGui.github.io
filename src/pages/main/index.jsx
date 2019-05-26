@@ -36,7 +36,6 @@ export default class FoxGui extends React.Component {
       <>
         <Header/>
         <div className="body-container">
-          <div className="body-container-left">
             <React.Suspense fallback={<Loading size="large" style={{minHeight: 'calc(100vh - 240px)'}}/>}>
                 <Switch>
                   <Route
@@ -53,7 +52,6 @@ export default class FoxGui extends React.Component {
                   <Redirect to="/notfound"/>
               </Switch>
             </React.Suspense>
-          </div>
         </div>
         <Footer/>
       </>
