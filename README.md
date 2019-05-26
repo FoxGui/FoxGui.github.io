@@ -1,5 +1,9 @@
 ## HTML5，CSS3，JavaScript，React，webpack学习日记
 
+### 2019-5-26
++ 添加css部分
++ 抄写飘零雾雨大大css布局定位相关内容，了解block，inline，inline-block具体区别
+
 ### 2019-5-25
 + 确定基本开发结构，可以开始添加学习记录
 + 添加homepage,html,css,javascript,404页面
