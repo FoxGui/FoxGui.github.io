@@ -1,14 +1,14 @@
+import { IConfig } from 'umi-types';
 
 // ref: https://umijs.org/config/
-export default {
+const config: IConfig = {
   treeShaking: true,
   routes: [
     {
       path: '/',
       component: '../layouts/index',
       routes: [
-        { path: '/', component: '../pages/index' },
-        { path: '/homepage', component: '../pages/homepage' }
+        { path: '/', component: '../pages/index' }
       ]
     }
   ],
@@ -16,16 +16,22 @@ export default {
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: true,
-      dva: false,
+      dva: true,
       dynamicImport: false,
-      title: 'Router',
+      title: 'FoxGui\'s Blog',
       dll: false,
 
       routes: {
         exclude: [
+          /models\//,
+          /services\//,
+          /model\.(t|j)sx?$/,
+          /service\.(t|j)sx?$/,
           /components\//,
         ],
       },
     }],
   ],
 }
+
+export default config;

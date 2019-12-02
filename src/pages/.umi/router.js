@@ -3,8 +3,9 @@ import { Router as DefaultRouter, Route, Switch } from 'react-router-dom';
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@tmp/history';
+import { routerRedux } from 'dva';
 
-const Router = DefaultRouter;
+const Router = routerRedux.ConnectedRouter;
 
 const routes = [
   {
@@ -15,39 +16,32 @@ const routes = [
         path: '/',
         component: require('../index').default,
         exact: true,
-        _title: 'Router',
-        _title_default: 'Router',
-      },
-      {
-        path: '/homepage',
-        component: require('../homepage').default,
-        exact: true,
-        _title: 'Router',
-        _title_default: 'Router',
+        _title: "FoxGui's Blog",
+        _title_default: "FoxGui's Blog",
       },
       {
         component: () =>
           React.createElement(
-            require('D:/Router/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('D:/MyGit/FoxGui.github.io/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
-        _title: 'Router',
-        _title_default: 'Router',
+        _title: "FoxGui's Blog",
+        _title_default: "FoxGui's Blog",
       },
     ],
-    _title: 'Router',
-    _title_default: 'Router',
+    _title: "FoxGui's Blog",
+    _title_default: "FoxGui's Blog",
   },
   {
     component: () =>
       React.createElement(
-        require('D:/Router/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('D:/MyGit/FoxGui.github.io/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),
-    _title: 'Router',
-    _title_default: 'Router',
+    _title: "FoxGui's Blog",
+    _title_default: "FoxGui's Blog",
   },
 ];
 window.g_routes = routes;
