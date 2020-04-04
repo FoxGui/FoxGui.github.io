@@ -1,37 +1,27 @@
-import { IConfig } from 'umi-types';
+import { defineConfig } from 'umi';
+const path = require('path');
 
-// ref: https://umijs.org/config/
-const config: IConfig = {
-  treeShaking: true,
+export default defineConfig({
   routes: [
     {
       path: '/',
-      component: '../layouts/index',
-      routes: [
-        { path: '/', component: '../pages/index' }
-      ]
-    }
+      component: '@/layouts/index',
+      routes: [{ path: '/', component: '@/pages/index' }],
+    },
   ],
-  plugins: [
-    // ref: https://umijs.org/plugin/umi-plugin-react.html
-    ['umi-plugin-react', {
-      antd: true,
-      dva: true,
-      dynamicImport: false,
-      title: 'FoxGui\'s Blog',
-      dll: false,
-
-      routes: {
-        exclude: [
-          /models\//,
-          /services\//,
-          /model\.(t|j)sx?$/,
-          /service\.(t|j)sx?$/,
-          /components\//,
-        ],
-      },
-    }],
-  ],
-}
-
-export default config;
+  dva: {},
+  antd: {},
+  chainWebpack(config) {
+    config.module
+      .rule('lint')
+      .test(/\.(j|t)sx?$/)
+      .pre()
+      .include.add(path.resolve(__dirname, './src'))
+      .end()
+      .use('eslint')
+      .loader('eslint-loader')
+      .options({
+        cache: true,
+      });
+  },
+});
