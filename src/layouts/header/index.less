@@ -1,0 +1,26 @@
+@header-border-bottom: 1px solid #f0f0f0;
+@header-line-height: 46px;
+
+.nav-header {
+  padding: 0 20%;
+  line-height: @header-line-height;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  border-bottom: @header-border-bottom;
+  text-align: center;
+
+  > * {
+    display: inline-block;
+  }
+
+  .nav-header-logo {
+    float: left;
+    margin-left: 20px;
+    line-height: @header-line-height;
+  }
+
+  :global .ant-menu-horizontal {
+    border-bottom: 0;
+  }
+}
