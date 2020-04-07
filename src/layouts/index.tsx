@@ -1,18 +1,19 @@
-import Blob_C from '@/constants';
 import React from 'react';
-import { useLocation } from 'umi';
-import BasicLayout from './basic';
-import HomepageLayout from './homepage';
+import styles from './index.less';
 
-const Layout: React.FC = props => {
-  const location = useLocation();
-  const { pathname: curPath } = location;
+import Header from './header';
 
-  return curPath === Blob_C.PATH.HOMEPAGE ? (
-    <HomepageLayout {...props} />
-  ) : (
-    <BasicLayout {...props} />
+const BasicLayout: React.FC = props => {
+  // TODO:增加窗口resize监听与解除事件，
+  // TODO:向下滚动时Header隐藏，鼠标移入/页面顶层/向上滚动时显示Header
+  return (
+    <div className={styles.normal}>
+      <Header />
+      {/* <h1 className={styles.title}>Yay! Welcome to umi!</h1> */}
+      {/* TODO:<aside></aside> */}
+      <section>{props.children}</section>
+    </div>
   );
 };
 
-export default Layout;
+export default BasicLayout;

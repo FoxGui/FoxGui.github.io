@@ -43,7 +43,9 @@ function Header() {
 
   return (
     <nav className={styles['nav-header']}>
-      <div className={styles['nav-header-logo']}>Scarecrow</div>
+      <Link to={Blog_C.PATH.ROOT} className={styles['nav-header-logo']}>
+        Scarecrow
+      </Link>
       {/* component先定义一层，其他以后再说 */}
       <Menu
         className={styles['nav-header-component']}

@@ -1,5 +1,6 @@
 @header-border-bottom: 1px solid #f0f0f0;
 @header-line-height: 46px;
+@header-background-color: #fff;
 
 .nav-header {
   padding: 0 20%;
@@ -8,7 +9,13 @@
   position: fixed;
   top: 0;
   border-bottom: @header-border-bottom;
+  background-color: @header-background-color;
   text-align: center;
+
+  &,
+  & > * {
+    opacity: 0.7;
+  }
 
   > * {
     display: inline-block;

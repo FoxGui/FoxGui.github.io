@@ -1,0 +1,40 @@
+@p-margin-bottom: 14px;
+@button-height: 32px;
+@line-height: 50px;
+
+body::before {
+  content: '';
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background: url(https://api.ixiaowai.cn/api/api.php) no-repeat;
+  filter: blur(5px) brightness(0.95);
+}
+
+.enter-page {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  &-center {
+    width: 255px;
+
+    // TODO: 字体待定
+    p:first-child {
+      height: @line-height;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: @line-height / 2;
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff;
+      margin: 0 0 @p-margin-bottom;
+      line-height: @line-height;
+    }
+  }
+}
