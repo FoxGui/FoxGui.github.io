@@ -1,16 +1,18 @@
+import Blob_C from '@/constants';
 import React from 'react';
-import styles from './index.less';
+import { useLocation } from 'umi';
+import BasicLayout from './basic';
+import HomepageLayout from './homepage';
 
-import Header from './header';
+const Layout: React.FC = props => {
+  const location = useLocation();
+  const { pathname: curPath } = location;
 
-const BasicLayout: React.FC = props => {
-  return (
-    <div className={styles.normal}>
-      <Header />
-      {/* <h1 className={styles.title}>Yay! Welcome to umi!</h1> */}
-      {props.children}
-    </div>
+  return curPath === Blob_C.PATH.HOMEPAGE ? (
+    <HomepageLayout {...props} />
+  ) : (
+    <BasicLayout {...props} />
   );
 };
 
-export default BasicLayout;
+export default Layout;

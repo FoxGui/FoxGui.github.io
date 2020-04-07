@@ -1,3 +1,4 @@
+import Blog_C from '@/constants';
 import React from 'react';
 import { Menu } from 'antd';
 import { Link, useLocation } from 'umi';
@@ -16,10 +17,10 @@ function Header() {
   const { pathname: curPath } = location;
 
   const navConfig: navProps[] = [
-    { label: '首页', path: '/homepage' },
-    { label: 'Blog', path: '/blog' },
-    { label: '更新日志', path: '/update_log' },
-    { label: '关于', path: '/about' },
+    { label: '首页', path: Blog_C.PATH.HOMEPAGE },
+    { label: 'Blog', path: Blog_C.PATH.BLOG },
+    { label: '更新日志', path: Blog_C.PATH.UPDATE_LOG },
+    { label: '关于', path: Blog_C.PATH.ABOUT },
   ];
 
   const genNav = (nav: navProps) => {
