@@ -3,10 +3,10 @@ const path = require('path');
 
 export default defineConfig({
   routes: [
-    { path: '/', component: '@/pages/enter'},
     {
       component: '@/layouts/index',
       routes: [
+        { path: '/', component: '@/pages/enter'},
         { path: '/homepage', component: '@/pages/homepage' },
       ],
     },

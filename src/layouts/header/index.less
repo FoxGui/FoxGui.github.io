@@ -11,6 +11,12 @@
   border-bottom: @header-border-bottom;
   background-color: @header-background-color;
   text-align: center;
+  transform: translateY(-@header-line-height - 4px);
+  transition: transform 0.5s;
+
+  &.visible {
+    transform: translateY(0);
+  }
 
   &,
   & > * {

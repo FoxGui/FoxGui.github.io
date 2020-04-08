@@ -6,14 +6,14 @@ import styles from './index.less';
 
 const Enter: React.FC = () => {
   return (
-    <main className={styles['enter-page']}>
-      <section className={styles['enter-page-center']}>
+    <section className={styles['enter-page']}>
+      <div className={styles['enter-page-center']}>
         <p>呐 好久不见</p>
         <Link to={Blog_C.PATH.HOMEPAGE}>
           <Button type="primary">Enter</Button>
         </Link>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

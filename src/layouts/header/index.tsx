@@ -1,10 +1,15 @@
 import Blog_C from '@/constants';
-import React from 'react';
+import RoutesUtils from '@/utils/routes';
 import { Menu } from 'antd';
-import { Link, useLocation } from 'umi';
+import classNames from 'classnames';
+import React from 'react';
+import { Link } from 'umi';
 import styles from './index.less';
 
-// interface HeaderProps {}
+interface HeaderProps {
+  className?: string;
+  visible: boolean;
+}
 
 interface navProps {
   label: string;
@@ -12,9 +17,9 @@ interface navProps {
   children?: navProps[];
 }
 
-function Header() {
-  const location = useLocation();
-  const { pathname: curPath } = location;
+function Header(props: HeaderProps) {
+  const curPath = RoutesUtils.getPathname();
+  const notRootPath = RoutesUtils.isNotRoot();
 
   const navConfig: navProps[] = [
     { label: '首页', path: Blog_C.PATH.HOMEPAGE },
@@ -42,7 +47,7 @@ function Header() {
   };
 
   return (
-    <nav className={styles['nav-header']}>
+    <nav className={classNames(styles['nav-header'], { [styles.visible]: props.visible })}>
       <Link to={Blog_C.PATH.ROOT} className={styles['nav-header-logo']}>
         Scarecrow
       </Link>
@@ -50,7 +55,7 @@ function Header() {
       <Menu
         className={styles['nav-header-component']}
         mode="horizontal"
-        defaultSelectedKeys={[`${curPath}`]}
+        defaultSelectedKeys={[notRootPath ? curPath : Blog_C.PATH.HOMEPAGE]}
       >
         {navConfig.map((nav: navProps) => {
           return genNav(nav);
