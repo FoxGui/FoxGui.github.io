@@ -1,30 +1,26 @@
 import React, { Component } from 'react';
 
-interface BasicCanvasProps {
+interface BasicCanvasProps {}
 
-}
-
-interface BasicCanvasState {
-
-}
+interface BasicCanvasState {}
 
 class BasicCanvas extends Component<BasicCanvasProps, BasicCanvasState> {
   private basicCanvas: any = null;
-  constructor(props: BasicCanvasProps) {
-    super(props);
-  }
+  // constructor(props: BasicCanvasProps) {
+  //   super(props);
+  // }
+
   componentDidMount(): void {
-    this.basicCanvas = document.getElementById('basic-canvas-00000')
+    this.basicCanvas = document.getElementById('basic-canvas-00000');
   }
 
   render(): React.ReactNode {
     return (
       <>
-
-        <canvas id={'basic-canvas-00000'}/>
+        <canvas id={'basic-canvas-00000'} />
       </>
-    )
+    );
   }
 }
 
-export default BasicCanvas
+export default BasicCanvas;
