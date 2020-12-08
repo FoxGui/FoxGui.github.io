@@ -1,7 +1,7 @@
 
 ## 3
 ### 3.3.1 var
-    var声明范围是**函数作用域**。声明变量关键字未使用时，默认创建全局变量，函数调用后，变量可以全局访问，同时变量也会被绑定到**window**上
+var声明范围是**函数作用域**。声明变量关键字未使用时，默认创建全局变量，函数调用后，变量可以全局访问，同时变量也会被绑定到**window**上
 ```js
 function test() {
     message = 'hi';
@@ -9,27 +9,27 @@ function test() {
 test();
 console.log(message)
 ```
-     **变量提升(hoist)：**var关键字可以把变量声明拉到**函数作用域**顶端
+**变量提升(hoist)：**var关键字可以把变量声明拉到**函数作用域**顶端
 ### 3.3.2 let声明
-    let 声明是**块级作用域**，重复let声明变量会报错**SyntaxError**
+let 声明是**块级作用域**，重复let声明变量会报错**SyntaxError**
 1. 暂时性死区
-    在 let 声明之前访问变量会报**ReferenceError: value is not defined**（未声明的变量进行访问也会报这个错误）
+在 let 声明之前访问变量会报**ReferenceError: value is not defined**（未声明的变量进行访问也会报这个错误）
 
 ### 3.3.3 const声明
-    变量必须初始化且不可更改
+变量必须初始化且不可更改
     
 ## 3.4 数据类型
-    原始类型： Undefined， Null， Boolean， Number， String， Symbol， 复杂数据类型： Object
+原始类型： Undefined， Null， Boolean， Number， String， Symbol， 复杂数据类型： Object
 ### 3.4.1 typeof
-    ['undefined', 'boolean', 'string', 'number', 'object', 'function', 'symbol'].includes(typeof x) === true;
+['undefined', 'boolean', 'string', 'number', 'object', 'function', 'symbol'].includes(typeof x) === true;
 ### 3.4.1 Undefined
 ### 3.4.3 Null
-    代表空对象指针，为假值
+代表空对象指针，为假值
 ### 3.4.4 Boolean
-    假值： false/''/0/NaN/null/undefined
+假值： false/''/0/NaN/null/undefined
 ### 3.4.5 Number
-    八进制： 077（078会当成十进制处理），十六进制：0x1a/0X1F<br/>
-    isNaN判断NaN<br/>
+八进制： 077（078会当成十进制处理），十六进制：0x1a/0X1F<br/>
+isNaN判断NaN<br/>
 
 <b>数字的属性</b>
 |属性 |	描述|
