@@ -83,3 +83,10 @@ for (const x of generatorFn()) {
 // 6
 
 ```
+
+#### 7.3.3 生成器特别适合做默认迭代器
+
+#### 7.3.4 提前终止生成器
+1. return() 提供给return的值是最终迭代器的值
+```return (4) // { value: 4, done: true } ```
+2. throw() 改方法会在暂停时注入error到生成器中，若未处理，生成器会关闭try...catch...处理后会调过这个值
